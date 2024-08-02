@@ -1,10 +1,9 @@
 "use client";
-import React from 'react'
-import { Spotlight } from './ui/Spotlight'
+import React from 'react';
+import { Spotlight } from './ui/Spotlight';
 import { motion } from "framer-motion";
 import { ImagesSlider } from './ui/ImagesSlider';
-
-import { images, words } from '@/data/index'
+import { images, words } from '@/data/index';
 import { FlipWords } from './ui/FlipWords';
 import MagicButton from './MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
@@ -28,20 +27,26 @@ const Hero = () => {
                         }}
                         className="z-50 flex flex-col justify-center items-center"
                     >
-                        <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                            RELEASE UNLIMITED <br /> MUSIC WORLDWIDE
-                            <FlipWords className=' text-rose shadow-purple' words={words} /> <br />
-
-                        </motion.p>
+                        <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 ">
+                                RELEASE UNLIMITED
+                            </motion.p>
+                        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                            <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+                                MUSIC WORLDWIDE
+                            </motion.p>
+                            <FlipWords className='font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent text-rose shadow-purple' words={words} />
+                        </div>
                         <motion.p className="font-bold text-xl md:text-1xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-400 py-2">
                             THE BEST PART? PROTECT WITH CONTENT ID & KEEP 100% OF YOUR RIGHTS & EARNINGS
                         </motion.p>
-                        <a>
-                            <MagicButton title='START NOW 30-DAYS FREE TRIAL' icon={<FaLocationArrow />} position="right" />
-                            <motion.p className="font-bold text-xl md:text-1xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                                ONLY <span className='font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple to-rose py-4'>$11/</span> YEAR
-                            </motion.p>
-                        </a>
+                        <motion.div>
+                            <a href="#">
+                                <MagicButton title='START NOW 30-DAYS FREE TRIAL' icon={<FaLocationArrow />} position="right" />
+                            </a>
+                        </motion.div>
+                        <motion.p className="font-bold text-xl md:text-1xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+                            ONLY <span className='font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple to-rose py-4'>$11/</span> YEAR
+                        </motion.p>
                     </motion.div>
                 </ImagesSlider>
             </div>
@@ -49,4 +54,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Hero;
