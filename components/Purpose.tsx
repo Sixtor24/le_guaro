@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 const Purpose = () => {
     return (
         <div id="projects">
-            <LampContainer children={"designer for"} />
+            <LampContainer>designer for</LampContainer>
             <TracingBeam className="px-6">
                 <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                     {dummyContent.map((item, index) => (
