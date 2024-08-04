@@ -11,36 +11,36 @@ const Navbar: React.FC = () => {
             <ul className="hidden md:flex space-x-8">
                 <li>
                     <Link href="/product">
-                        <span className="hover:text-rose">Distribution</span>
+                    <span className="hover:text-rose uppercase font-manrope font-semibold">DISTRIBUTION</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/integrations">
-                        <span className="hover:text-rose">Cover Art Maker</span>
+                        <span className="hover:text-rose uppercase font-manrope font-semibold">COVER ART MAKER</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/enterprise">
-                        <span className="hover:text-rose">Services</span>
+                        <span className="hover:text-rose uppercase font-manrope font-semibold">SERVICES</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/camera-to-cloud">
-                        <span className="hover:text-rose">Smart-Links</span>
+                        <span className="hover:text-rose uppercase font-manrope font-semibold">SMART-LINKS</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/resources">
-                        <span className="hover:text-rose">Youtube Vevo</span>
+                        <span className="hover:text-rose uppercase font-manrope font-semibold">YOUTUBE VEVO</span>
                     </Link>
                 </li>
             </ul>
             <div className="flex items-center space-x-4">
                 <Link href="/signin">
-                    <span className="hidden md:inline-block hover:text-rose">Sign In</span>
+                    <span className="hidden md:inline-block hover:text-rose uppercase font-manrope font-semibold">SIGN IN</span>
                 </Link>
                 <Link href="/start-free-trial">
-                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-3xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <button className="inline-flex uppercase h-12 animate-shimmer font-manrope font-semibold items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         Start Trial Free
                     </button>
                 </Link>

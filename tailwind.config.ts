@@ -26,6 +26,18 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        manrope: ['var(--font-manrope)', 'sans-serif'],
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extraBold: '800',
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -45,6 +57,7 @@ const config = {
         rose: "#ED1566",
         purple: "#5927a0",
         green: "#70b578",
+        graytext: "#d0d0d0",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -79,7 +79,7 @@ export const ScrollReveal = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-3xl font-bold text-rose"
+                                className="text-2xl font-bold font-manrope text-rose uppercase"
                             >
                                 {item.title}
                             </motion.h2>
@@ -90,7 +90,7 @@ export const ScrollReveal = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-lg text-slate-300 max-w-xl mt-10"
+                                className="text-lg text-slate-300 max-w-xl mt-10 font-montserrat"
                             >
                                 {item.description}
                             </motion.p>
