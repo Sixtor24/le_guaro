@@ -14,7 +14,9 @@ const Distribute = () => {
                 <span className="font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple to-rose py-4">your music</span>
             </h1>
             <div className="mx-12 md:mx-24 text-center my-10">
-                <TextGenerateEffect duration={2} filter={true} words={text} />
+                <p className=" text-graytext sm:text-xl md:text-xl font-montserrat">
+                Launch your music into the world faster than ever! Our Express distribution service ensures that your songs will be available in major stores within just 78 hours. No additional costs. No complications. Plus, any updates you need—whether it’s a cover change, audio modification, or information revision—will take effect in record time: 24 to 72 hours. We’re the fastest and most reliable choice for artists like you.
+                </p>
             </div>
             <Carousel images={logos} />
             <div className="z-50 flex flex-col justify-center items-center mx-[25px] ">
